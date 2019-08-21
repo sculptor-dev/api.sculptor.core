@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace api.sculptor.core.Controllers
+namespace Api.Sculptor.Core.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -21,6 +17,13 @@ namespace api.sculptor.core.Controllers
         public string Echo([FromBody] EchoRequest request)
         {
             return request.toEcho;
+        }
+
+        [HttpGet]
+        [Route("hello.world")]
+        public string HelloWorld()
+        {
+            return "hello world";
         }
     }
 }
