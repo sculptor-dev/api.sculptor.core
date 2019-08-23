@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 using Api.Sculptor.Core.Controllers;
 
@@ -17,6 +16,12 @@ namespace Api.Sculptor.Core.Tests.Controllers
         public void Test1()
         {
             Assert.Equal("hello world", _testController.HelloWorld());
+        }
+
+        [Fact]
+        public void Test2()
+        {
+            Assert.Equal("echo echo", _testController.Echo(new TestController.EchoRequest() { toEcho = "echo echo" }));
         }
     }
 }
