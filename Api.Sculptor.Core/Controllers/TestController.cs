@@ -25,5 +25,13 @@ namespace Api.Sculptor.Core.Controllers
         {
             return "hello world";
         }
+
+
+        [HttpGet]
+        [Route("goodbye.world")]
+        public string GoodbyeWorld()
+        {
+            return "goodbye world";
+        }
     }
 }

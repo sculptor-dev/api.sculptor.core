@@ -23,5 +23,11 @@ namespace Api.Sculptor.Core.Tests.Controllers
         {
             Assert.Equal("echo echo", _testController.Echo(new TestController.EchoRequest() { toEcho = "echo echo" }));
         }
+
+        [Fact]
+        public void Test3()
+        {
+            Assert.Equal("goodbye world", _testController.GoodbyeWorld());
+        }
     }
 }
