@@ -1,22 +1,41 @@
+dist: bionic
+sudo: required
 language: csharp
 mono: none
 dotnet: 2.2.401
+env:
+  global:
+  - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+  - secure: kVQH/MU5p7Bl0ina6RqIEB4DL02k31wH0I45jRLk6mlH8m29IcXrN/qm5QsxeIl1qS0zETW1wNE5bFVsQTVSrkmAZXCZ45OLLIVYGoY6Ht+E7Ulw0yZZdNOU3s8uwyqi1llZ0BtsVKaBwuZO3Ay/a8YFDaI/mIdZqx1M9bHCTZ/Ney8u9tTUmPe+VsN4c3MXWQwRdE6EwTYbUhxN6FEp0I9En/bxv2WGMUalWoPy6TE/kaxz5kqBfZlq8MaX55ztLjwNv/THdku5sxlkS7HrJGB2W9+m0EA3Q8gnC4TfhrpNwMNxyQH0cbV4rE2BWIeRowRFoCKw264ijcNd484Yge52aGurUI91SRn4daBVEaJeWbs6DRlMFkHFi3QlGwxWF1kimj4ve7pnUPqytpijW8kd4mEHCL2dOJ9Ye96aH/4t1UqO1pBaRTgpYThAVlUG+kpW5qsYfEd4TUcRHjJYVHJ547vNSI1BXVD8DUE1lD3bO2BhHTQDBpxxrlfQTE9l181dCk6y7G1UzEPkfjzMXevrW0BHni465QKvs47p6z8cULCS+ot5ILnKLaS3+FyoMEVLmBgfYtjt0VVdn3Ts8Q+0+wxosBi+vG43KYFHFWtayTmndtMjNndCdifP3VhgoyKxF/zOeTNwnPJQF2hLYUI2CvMoJIGS3R0AJGM/r0E=
+  - secure: atzjBqyYkWdd4HyOZUJRguEBUYCGZGUW9h2HyASmtsYpic9FTcd8t9rBdMYVm1nDuwI/d/8kX1LxEhAvLK+hKyC4DYjq8JcpFo0g4XqIO/tm9dyJxNb+Hz8TiH8sLmbXXno1d/zsb0oS+IkE/uu1n/ESqHqCAlpUwc2TX+zRPGW3hW6q9tfCCkcWg03SDIe51lBo9jzG5RB9TzBkOZ0Xg/HvieqtigHfb1MlsFwOkRP9msCeqaiDlQidxnEMwgRQ7GD2mRE1HXBPOpGgeVtGYzfImfp50n/f7jnwju4Ru5A9YJKCPzlbEEYtaGJbXyG7JH30BLzc+bT2kJQzjR1/F5JQl8hoJk5Vl8RrGgBCTsRgv4YJoII1TxhK+KSHju1mlR6NUUllSKBhOUTU2h99u/q7cG0dVNFR7dhsNC/xOjJUbrN+9ZDfGerYaZXKGoT+jangqwxKeGydgTnWJt22ElGxz9FNnnO9ZlbjRR4aCzkSet14KNDGjpkVgLom1LLiagx7srOgbDnKQr3g7fL22tFpFWYCIT0EowrodIJxr/tmbShEbnsdQIdB02Pnemm5OYR0MaVAEvoNXAMY38n0nnA08HfWQZ7TWx9mOyXSy9zB6ZZcv+XAYUTtJBWZuEIsWocbV8QSL56gAZYhH7GwPCobAdeKUwaNCxqrDSFJoww=
+  - secure: dMqjVAJjLWwaMyFc5PDJwL0vifRDzDmWBbclcygjwHAULaxOjvWocIWlpCsL7zGnwgHC8Ba5qIEYXEDVgUM20h+CZpFTX3yPyZcOKkrfg5SNWGQtZML+FBxKfcUciUFM7mnxh8l8rFG+kwjIWINgOP/jkqzKn25Z6Qxgj7lz3v+MoiRJEI6pBcgTBhN5H6fp1JhbiOR2dv8zWNPtAE75pKvbBUXf6KUbTyehPHCHx7Y2+HRgyDNPrYSNvPNCHlmDM2X+VhsB20T+vSeFzRi77GjgsOX2nsHOn2JHZCyag3bLRI1/K5LouMblQhbIbfp8mJYu0vvjB3jOMNek93zyM7kymmexBERVha3ya0/BxdY3geADpTfeXj5Dk6Qt8W3oKoJ1Ak7tsJew7LmNfFnQnwuVZgFevMBdVdQVE927fguR8imZPROjM/X9y4fDUuVU6yPZhttzljvTw0Zad5O2UVR1CpSj1QuWYG9skmgB9FXl8kcrghnVd6AlAJSddovspSpp4PsbCpMQTFjSy5H9oPUGrK9Y3vWdfxkJDLQDm5zxvrG6GTNSdYpctSsnpU6DcM3JC2fgKqSaSQX+BQpbBkz6ru0QROvDFPlHoC8B21gUjyPAzvVmc4aVSN0zGlX3yIxeHtBwRgFvxZmKaR0QLPCcpJKkUFSUXfwmiAQUe10=
+  - secure: SIShQ/hZfRiqansV9MnmptVPnhPtLyEyFB9yIStPQg+2idZJDGlh+8sbQhb6GDA7yVJoU3UMdCpEbP4FvbRYlz2VJ0BiH4zhvp26+WzETfhzvQFu5seoJY9EVR4/5UqqMU7dypDf7w0WZ8RxRtoUZW95NotwE6VwH63urBWldIo9y4bK/HTGZxELD4K0z9DoG7Tzj4Ch/T9SlhEafpF4HKNr+qN0rHm7KgxWlb5wG/bX3+AwAx6vzbGH+jqaZn2j2tekbInPi1zpYK3D16tUX/eqSpJzAUC4K6sr8swZ6FTEPCmPadqC5dIrqwU784JQYl8wKaF/6Def7abclIVLmBuzrRZyqd9Pebd3MsheIq2t55ZBI1tCzZfFrbLCImJxF49dU+63OdvWX2j3FHV4JOq7yx35F1WQtFjl09iFixSagPD7CwzY5nP+nXyA0HExyvJGjv4/i+GdQuzt9JeAzBG4CRNA/hy6cQDg8Zi4UoczCYUgJC6F1jTYDL8ZYFaWKLF6ebOjqXnpfVfAa+BX29SkZMEBSEoJAM+ldks+ntixXpgte+1MecFZzaAa8p5lJeDRPJLPhdGBVwY6kq5Txg3yXSEvIWUV3tUNvWISdSGSZ2Gy2McorgfwxaPTg8Xzg4Re0tCC08UgNyJLZ7+MAk8vN19Kx8jelJtgTdmIN2o=
+services:
+- docker
 install:
- - dotnet tool install coveralls.net --version 1.0.0 --tool-path tools
+- dotnet tool install coveralls.net --version 1.0.0 --tool-path tools
 script:
- - dotnet build
- - dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
- - REPO_COMMIT_AUTHOR=$(git show -s --pretty=format:"%cn")
- - REPO_COMMIT_AUTHOR_EMAIL=$(git show -s --pretty=format:"%ce")
- - REPO_COMMIT_MESSAGE=$(git show -s --pretty=format:"%s")
- - echo $TRAVIS_COMMIT
- - echo $TRAVIS_BRANCH
- - echo $REPO_COMMIT_AUTHOR
- - echo $REPO_COMMIT_AUTHOR_EMAIL
- - echo $REPO_COMMIT_MESSAGE
- - echo $TRAVIS_JOB_ID
- - ./tools/csmacnz.Coveralls --opencover -i Api.Sculptor.Core.Tests/coverage.opencover.xml --repoToken $COVERALLS_REPO_TOKEN --commitId $TRAVIS_COMMIT --commitBranch $TRAVIS_BRANCH --commitAuthor "$REPO_COMMIT_AUTHOR" --commitEmail "$REPO_COMMIT_AUTHOR_EMAIL" --commitMessage "$REPO_COMMIT_MESSAGE" --jobId $TRAVIS_JOB_ID  --serviceName "travis-ci"  --useRelativePaths
-
+- dotnet build
+- dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+- REPO_COMMIT_AUTHOR=$(git show -s --pretty=format:"%cn")
+- REPO_COMMIT_AUTHOR_EMAIL=$(git show -s --pretty=format:"%ce")
+- REPO_COMMIT_MESSAGE=$(git show -s --pretty=format:"%s")
+- echo $TRAVIS_COMMIT
+- echo $TRAVIS_BRANCH
+- echo $REPO_COMMIT_AUTHOR
+- echo $REPO_COMMIT_AUTHOR_EMAIL
+- echo $REPO_COMMIT_MESSAGE
+- echo $TRAVIS_JOB_ID
+- ./tools/csmacnz.Coveralls --opencover -i Api.Sculptor.Core.Tests/coverage.opencover.xml
+  --repoToken $COVERALLS_REPO_TOKEN --commitId $TRAVIS_COMMIT --commitBranch $TRAVIS_BRANCH
+  --commitAuthor "$REPO_COMMIT_AUTHOR" --commitEmail "$REPO_COMMIT_AUTHOR_EMAIL" --commitMessage
+  "$REPO_COMMIT_MESSAGE" --jobId $TRAVIS_JOB_ID  --serviceName "travis-ci"  --useRelativePaths
+- cd ./scripts/docker
+- chmod +x ./deploy-envs.sh
+- chmod +x ./build.sh
+- chmod +x ./deploy.sh
+- "./build.sh"
+- if [ "$TRAVIS_BRANCH" == "master" ]; then ./deploy.sh; fi
 branches:
   only:
   - master
