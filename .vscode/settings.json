@@ -1,3 +1,11 @@
 {
-    "dotnet-test-explorer.testProjectPath": "./Api.Sculptor.Core.Tests"
+    "dotnet-test-explorer.testProjectPath": "./Api.Sculptor.Core.Tests",
+    "csharpfixformat.style.braces.allowInlines": false,
+    "csharpfixformat.style.braces.onSameLine": false,
+    "csharpfixformat.style.newline.atEnd": true,
+    "csharpfixformat.style.newline.elseCatch": true,
+    "csharpfixformat.style.spaces.afterBracket": false,
+    "csharpfixformat.style.spaces.afterParenthesis": false,
+    "csharpfixformat.style.spaces.beforeIndexerBracket": false,
+    "csharpfixformat.style.spaces.beforeParenthesis": false
 }
