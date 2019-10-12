@@ -22,6 +22,7 @@ script:
 - REPO_COMMIT_MESSAGE=$(git show -s --pretty=format:"%s")
 - echo $TRAVIS_COMMIT
 - echo $TRAVIS_BRANCH
+- echo $TRAVIS_EVENT_TYPE
 - echo $REPO_COMMIT_AUTHOR
 - echo $REPO_COMMIT_AUTHOR_EMAIL
 - echo $REPO_COMMIT_MESSAGE
@@ -35,7 +36,7 @@ script:
 - chmod +x ./build.sh
 - chmod +x ./deploy.sh
 - "./build.sh"
-- if [ "$TRAVIS_BRANCH" == "master" ]; then ./deploy.sh; fi
+- if [ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_EVENT_TYPE" == "push" ]; then ./deploy.sh; fi
 branches:
   only:
   - master
