@@ -39,3 +39,5 @@ msbuild.wrn
 # code coverage reports
 **/coverage.json
 **/coverage.opencover.xml
+
+scripts/docker/new-task-definition.json
